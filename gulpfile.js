@@ -8,3 +8,7 @@ gulp.task('styles',function() {
     .pipe(gulp.dest('build'))
 
 });
+
+gulp.task('watch',function() {
+  gulp.watch('css/styles.css', ['styles']);
+});
