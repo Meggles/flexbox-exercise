@@ -70,23 +70,23 @@ a:hover {
   flex: 1;
 }
 
+@media all and (max-width: 1000px) {
 
-/* Flexbox styles */
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
 
-.wrapper {
-  max-width: 1000px;
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
+
+  /*.flex-nav .social {
+    flex: 1 1 25%;
+  }*/
 }
 
-.box {
-  flex-basis: 250px;
-  flex-grow: 1;
-}
-
-.box2,
-.box5 {
-  flex-grow: 5;
-}
-
-.box4 {
-  flex-basis: 100px;
+@media all and (max-width: 500px) {
+  .flex-nav li {
+    flex-basis: 100%;
+  }
 }
