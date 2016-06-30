@@ -40,6 +40,22 @@ a:hover {
 /* Basic setup */
 .flex-nav ul {
   border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.flex-nav li {
+  flex: 3;
+}
+
+.flex-nav .social {
+  flex: 1;
+}
+
+/* Basic setup */
+.flex-nav ul {
+  border: 1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
