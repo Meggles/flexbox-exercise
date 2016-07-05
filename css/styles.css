@@ -21,7 +21,7 @@ a {
   text-decoration: none;
   background: rgba(0, 0, 0, 0.2);
   padding: 20px 5px;
-  display: inline-block;
+  display: block;
   width: 100%;
   text-align: center;
   transition: all 0.5s;
@@ -41,6 +41,8 @@ img {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 input {
@@ -67,8 +69,6 @@ footer {
 /* Basic setup */
 .flex-nav ul {
   border: 1px solid black;
-  margin: 0;
-  padding: 0;
   display: flex;
 }
 
@@ -78,6 +78,35 @@ footer {
 
 .flex-nav .social {
   flex: 1;
+}
+
+/* Flex container */
+.slider-nav ul {
+  display: flex;
+  align-items: stretch;
+  font-size: 12px;
+}
+
+/* First flex item */
+.slider-nav li {
+  flex: 2;
+  display: flex;
+  align-items: stretch;
+}
+
+.slider-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-nav span {
+  display: block;
+}
+
+.slider-nav .arrow {
+  flex: 1;
+  font-size: 30px;
 }
 
 @media all and (max-width: 1000px) {
